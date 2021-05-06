@@ -5,7 +5,7 @@
 // @include     https://*
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
 // @grant       none
-// @version     0.2
+// @version     0.2.1
 // @author      -
 // @description 2020/10/4 下午1:14:10
 // ==/UserScript==
@@ -74,6 +74,19 @@
       match: /https:\/\/blog\.csdn\.net\//,
       replace: /-CSDN博客$/,
       replacement: " - CSDN博客"
+    },
+    {
+      //Python Docs
+      //"3. An Informal Introduction to Python — Python 3.9.5 documentation"
+      match: /https:\/\/docs\.python\.org\//,
+      replace: /^\d+\. (.+) — Python [\d.]+ documentation$/,
+      replacement: function(title, g1){
+        var version = /https:\/\/docs\.python\.org\/([\d.]+)\//.exec(window.location.href)[1]
+        if(version == "2" || version == "3")
+          return `${g1} - Python${version} Docs`
+        else
+          return `${g1} - Python ${version} Docs`
+      }
     },
     
     
