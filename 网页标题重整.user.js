@@ -43,7 +43,6 @@
       replacement: " - 哔哩哔哩"
     },
     {
-      //t201210
       //"YYUT新搬运的个人空间 - 哔哩哔哩 ( ゜- ゜)つロ 乾杯~ Bilibili"
       match: /https:\/\/space\.bilibili\.com\//,
       mode: 2,
@@ -51,7 +50,6 @@
       replacement: " - 哔哩哔哩"
     },
     {
-      //t201025
       //"《明日方舟》2020年感谢庆典分享会 - 明日方舟 - 哔哩哔哩直播，二次元弹幕直播平台"
       //https://live.bilibili.com/5555734
       match: /https:\/\/live\.bilibili\.com\//,
@@ -59,7 +57,6 @@
       replacement: " - 哔哩哔哩直播"
     },
     {
-      //t201024
       //"(130) 【歌枠】もうすぐ80万人！？sing a songぺこ！【ホロライブ/兎田ぺこら】 - YouTube"
       match: /https:\/\/www\.youtube\.com\//,
       mode: 3,
@@ -104,7 +101,6 @@
       replace: /^\(\d+\) /
     },
     {
-      //t201030
       //"联想秀大批「黑科技」，机器人、平板、折叠屏还有未来"
       //https://mp.weixin.qq.com/s/l8cWNPNQKVf2VhjIOLm_8g
       //https://mp.weixin.qq.com/s?__biz=MzA4NTI3NTkyNQ==&mid=2654011302&idx=1&sn=81083e26e6caf9bc6e2e64b80d4cb8cb&chksm=841e3bdcb369b2ca3eb5747c99da3b88bce4f955e219446e93d77f3103b38d1616d6debd5bbb&scene=126&sessionid=1604074548&key=360754e56e033319bb44ae0b839bed5bdc2a94abbab36e77fd3a9fb8e6b31a490d67920b4c36aa649304e3fe471665c054b2f82b4b4b6f1456f402306e4e81c865de83aed870df86688cbb2bc321f80f1e3f6e58a0146c41b4c2c7f59918d7200a6f0b04330f0786597b4aa39d4547546c595aca16e774e9055ba0a57b5d4c2c&ascene=1&uin=MjEwNzQ4OTcwMw%3D%3D&devicetype=Windows+10+x64&version=62090538&lang=zh_CN&exportkey=AarxJe31yI3qjdJizM4O%2FqA%3D&pass_ticket=u5jcivRZfrTkXLFTN6v7n2aC4AB4hPZmugRobPX6x5OQp3S1D%2BtXgiPV%2FY8%2BXMTT&wx_header=0
