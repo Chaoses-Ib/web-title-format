@@ -5,7 +5,7 @@
 // @include     https://*
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
 // @grant       none
-// @version     0.1
+// @version     0.2
 // @author      -
 // @description 2020/10/4 下午1:14:10
 // ==/UserScript==
