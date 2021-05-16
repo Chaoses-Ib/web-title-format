@@ -5,7 +5,7 @@
 // @include     https://*
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
 // @grant       none
-// @version     0.2.2
+// @version     0.2.3
 // @author      -
 // @description 2020/10/4 下午1:14:10
 // ==/UserScript==
@@ -132,9 +132,18 @@
         //var title = jq('meta[property="og:title"]').attr("content") + " - " + jq("#js_name")[0].outerText;
         //$('meta[property="og:title"]').attr("content", title);
         return title + " - " + jq("#js_name")[0].outerText;
-      }
+      },
     },
-
+    {
+      //Twitter
+      //https://twitter.com/poriuretan_dayo/status/1392659895825039362
+      //"(20) ぽりうれたん on Twitter: "露出狂 https://t.co/lrXPqn46Yl" / Twitter"
+      //"ぽりうれたん: 露出狂 - Twitter"
+      match: /https:\/\/twitter\.com\//,
+      mode: 3,
+      replace: /(?:\(\d+\) )?(.*?) on Twitter: "(.*?)(?: https:\/\/t\.co\/[^"]+)?" \/ Twitter/,
+      replacement: "$1: $2 - Twitter"
+    }
   ];
   
   var url = window.location.href;
