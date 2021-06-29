@@ -5,7 +5,7 @@
 // @include     https://*
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
 // @grant       none
-// @version     0.2.4
+// @version     0.2.5
 // @author      -
 // @description 2020/10/4 下午1:14:10
 // ==/UserScript==
@@ -36,17 +36,19 @@
       replacement: " - $1"
     },
     {
-      //"【后宫推荐】五部经典的初次热血后宫场景（第一期）_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili"
+      //"【电视动画/MAPPA】链锯人(电锯人) 先导PV【F宅/1080P+】_哔哩哔哩_bilibili"
+      //https://www.bilibili.com/video/BV1hU4y1G7vf
       match: /https:\/\/www\.bilibili\.com\/video\//,
       mode: 3,
-      replace: /_哔哩哔哩 \(゜-゜\)つロ 干杯~-bilibili$/,
+      replace: /_哔哩哔哩_bilibili$/,
       replacement: " - 哔哩哔哩"
     },
     {
-      //"YYUT新搬运的个人空间 - 哔哩哔哩 ( ゜- ゜)つロ 乾杯~ Bilibili"
+      //"百鬼绫目Official的个人空间_哔哩哔哩_Bilibili"
+      //https://space.bilibili.com/389858027/
       match: /https:\/\/space\.bilibili\.com\//,
       mode: 2,
-      replace: / - 哔哩哔哩 \( ゜- ゜\)つロ 乾杯~ Bilibili$/,
+      replace: /_哔哩哔哩_Bilibili$/,
       replacement: " - 哔哩哔哩"
     },
     {
