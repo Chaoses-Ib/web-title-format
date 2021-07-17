@@ -5,7 +5,7 @@
 // @include     https://*
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
 // @grant       none
-// @version     0.2.5
+// @version     0.2.6
 // @author      -
 // @description 2020/10/4 下午1:14:10
 // ==/UserScript==
@@ -67,8 +67,9 @@
 
     {
       //E小说
-      //"第四百四十六章 欺负鬼_李凡慕千凝_我真不是隐世高手李凡_玄幻_E小说"
-      match: /https:\/\/www\.zwda\.com\//,
+      //"第五百七十五章 好好赎罪_李凡慕千凝_我真不是隐世高手李凡_玄幻_E小说"
+      //https://www.eexiaoshuo.com/wozhenbushiyinshigaoshoulifan/744719/
+      match: /https:\/\/www\.eexiaoshuo\.com\//,
       replace: /_[^_]*_[^_]*_[^_]*_E小说$/
     },
     
