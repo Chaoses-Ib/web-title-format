@@ -1,5 +1,6 @@
 // ==UserScript==
-// @name        网页标题重整
+// @name        web-title-format
+// @name:zh-CN  网页标题重整
 // @namespace   Chaoses Ib
 // @include     http://*
 // @include     https://*
