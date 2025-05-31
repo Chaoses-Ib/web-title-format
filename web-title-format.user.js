@@ -4,7 +4,6 @@
 // @namespace   Chaoses Ib
 // @include     http://*
 // @include     https://*
-// @require     https://code.jquery.com/jquery-3.5.1.min.js
 // @grant       none
 // @version     0.2.6
 // @author      -
@@ -13,7 +12,7 @@
 
 (function(){
   //'use strict';
-  var jq = $.noConflict(true);
+  // var jq = $.noConflict(true);
   
   if(false){
     listenLoad(() => alert("load event listened"));
@@ -135,7 +134,12 @@
         //文章标题 - 公众号
         //var title = jq('meta[property="og:title"]').attr("content") + " - " + jq("#js_name")[0].outerText;
         //$('meta[property="og:title"]').attr("content", title);
-        return title + " - " + jq("#js_name")[0].outerText;
+        // return title + " - " + jq("#js_name")[0].outerText;
+        var nameElement = document.getElementById("js_name");
+        if (nameElement) {
+          return title + " - " + nameElement.textContent;
+        }
+        return title;
       },
     },
     {
