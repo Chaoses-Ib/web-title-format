@@ -98,7 +98,13 @@
           return `${g1} - Python ${version} Docs`
       }
     },
-    
+    {
+      // LLVM docs
+      // 'LLVM Tutorial: Table of Contents — LLVM 21.0.0git documentation'
+      match: /https:\/\/llvm\.org\/docs\//,
+      replace: /LLVM \S+ documentation$/,
+      replacement: 'LLVM documentation'
+    },
     
     {
       //"用户:脂肪酸钠 - 维基教科书，自由的教学读本"
