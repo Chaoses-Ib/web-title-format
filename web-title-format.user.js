@@ -113,7 +113,7 @@
     },
     {
       //"科幻季刊 - 维基百科，自由的百科全书"
-      match: /https:\/\/zh\.wikipedia\.org\/wiki\//,
+      match: /https:\/\/zh\.wikipedia\.org\//,
       replace: /，自由的百科全书$/
     },
     {
