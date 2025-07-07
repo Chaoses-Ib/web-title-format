@@ -124,7 +124,7 @@
     },
     {
       //"(9 封私信 / 80 条消息) 求推荐一款舒服好用的自定义键位鼠标，10-20个按键左右？工作用？ - 知乎"
-      match: /https:\/\/www\.zhihu\.com\//,
+      match: /https:\/\/[^.]+\.zhihu\.com\//,
       //match: /https:\/\/www\.zhihu\.com\/question\//,
       mode: 3,
       replace: /^\([^)]+\) /
