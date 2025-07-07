@@ -36,6 +36,12 @@
       replacement: " - $1"
     },
     {
+      // "ep.1 マカベ家 | 友達 | 固焼きそば | 安達太良博士 | 泉わこ | 203号室 / CITY THE ANIMATION"
+      match: /https:\/\/(?:bgm|bangumi)\.tv\/ep\//,
+      replace: /^(.*) \/ ([^\/]+)$/,
+      replacement: "「$2」$1"
+    },
+    {
       //"【电视动画/MAPPA】链锯人(电锯人) 先导PV【F宅/1080P+】_哔哩哔哩_bilibili"
       //https://www.bilibili.com/video/BV1hU4y1G7vf
       match: /https:\/\/www\.bilibili\.com\/video\//,
