@@ -37,8 +37,9 @@
     },
     {
       // "ep.1 マカベ家 | 友達 | 固焼きそば | 安達太良博士 | 泉わこ | 203号室 / CITY THE ANIMATION"
+      // "ep.13 らんまの弱点 / らんま1/2 第2期"
       match: /https:\/\/(?:bgm|bangumi)\.tv\/ep\//,
-      replace: /^(.*) \/ ([^\/]+)$/,
+      replace: /^(.*) \/ (.+)$/,
       replacement: "「$2」$1"
     },
     {
