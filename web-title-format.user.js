@@ -106,6 +106,12 @@
       }
     },
     {
+      // https://peps.python.org/pep-0342/
+      // PEP 342 -- Coroutines via Enhanced Generators | peps.python.org
+      match: /https:\/\/peps\.python\.org/,
+      replace: / \| peps.python.org$/,
+    },
+    {
       // LLVM docs
       // 'LLVM Tutorial: Table of Contents — LLVM 21.0.0git documentation'
       match: /https:\/\/llvm\.org\/docs\//,
